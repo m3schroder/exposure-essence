@@ -1,0 +1,9 @@
+node_modules/
+.next/
+*.tfstate*
+.terraform/.terraform*
+.env
+
+.github/workflows/strukt.code-workspace
+.vercel
+.env*.local
