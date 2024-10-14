@@ -17,3 +17,5 @@ The API is designed such that the routing, route handling, and implementation ar
 The API and frontend are deployed to Azure App Service via the terraform provider. I have the Terraform made to setup mailing and domain DNS but since this isn't live yet I don't have it running. 
 
 The various environment variables needed are output into the repositories environment variables / secrets. Depending on the sensitivity of the output. These are then consumed from the github workflow and passed into the Dockerfile as build args. 
+
+Once the Dockefile is built and pushed to the Azure Container Registry the webhook that's on the App Service detects the change and updates the currently running image. 
