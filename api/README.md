@@ -1,33 +1,5 @@
-# App
-Boilerplate for Go Fiber that makes use of Docker, PostgreSQL and JWT.
+# Golang Server
 
-# Development
-### In order to have an optimal development experience you need to have Docker installed.
-Set the environment variables in a `.env` file:
-	- DB_PORT=5432
-	- DB_USER=example_user
-	- DB_PASSWORD=example_password
-	- DB_NAME=example_db
-	- SECRET=example_secret
+Boilerplate for Go Fiber that makes use of Docker and Azure SQL
 
-Be sure you don't have any conflicting containers.
-Then run the commands:
-
-`docker compose build`
-
-`docker compose up`
-
-This should start the API and the database.
-
-## Database Management
-You can manage the database via `psql` with the command:
-
-`docker-compose exec db psql -U <DB_USER (from the environment variables)>`
-
-Happy coding!
-
-
-Login to gcloud with gcloud auth application-default login  to run the import photos thing
-
-gcloud auth application-default login --scopes=https://www.googleapis.com/auth/drive.readonly,https://
-www.googleapis.com/auth/drive.metadata.readonly;https://www.googleapis.com/auth/testIamPermissions
+It's a lightweight version of the full app that's in my freelance organization on GH.
