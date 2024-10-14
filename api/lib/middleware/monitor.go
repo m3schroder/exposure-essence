@@ -6,6 +6,6 @@ import (
 )
 
 func Monitor() fiber.Handler {
-	mon := monitor.New(monitor.Config{Title: "Strukt API Monitor"})
+	mon := monitor.New(monitor.Config{Title: "Exposure API Monitor"})
 	return mon
 }

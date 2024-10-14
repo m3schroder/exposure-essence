@@ -11,7 +11,7 @@ func Swagger(version string) fiber.Handler {
 	config := swagger.Config{
 		FilePath: fmt.Sprintf("./lib/docs/%s/swagger.yaml", version),
 		Path:     "docs",
-		Title:    "Fiber API documentation",
+		Title:    "Exposure API documentation",
 		CacheAge: 500,
 	}
 	return swagger.New(config)
